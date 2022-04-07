@@ -46,6 +46,7 @@ void insertMap(HashMap * map, char * key, void * value)
     while (map->buckets[hashFunction] != NULL && map->buckets[hashFunction]->key != NULL)
     {
         if (is_equal(key, map->buckets[hashFunction]->key) == 1) return;
+        hashFunction = (hashFunction+1) % map->capacity;
     }
 
     map->size++;
