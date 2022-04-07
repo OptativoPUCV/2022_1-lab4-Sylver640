@@ -75,6 +75,8 @@ void enlarge(HashMap * map) {
 
     for (int i = 0; i < map->capacity; i++)
     {
+        if (oldBuckets[i] == NULL)
+            break;
         map->buckets[i] = createPair(oldBuckets[i]->key, oldBuckets[i]->value);
     }
 
