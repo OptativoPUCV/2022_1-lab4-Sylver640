@@ -82,9 +82,11 @@ HashMap * createMap(long capacity) {
     return newMap;
 }
 
-void eraseMap(HashMap * map,  char * key) {    
+void eraseMap(HashMap * map,  char * key) 
+{
+    long hashFunction = hash(key, map->capacity);    
 
-
+    map->size--;
 }
 
 Pair * searchMap(HashMap * map,  char * key) 
