@@ -264,3 +264,17 @@ Thu Apr  7 15:28:19 HSP 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 3749884
+Thu Apr  7 15:32:12 HSP 2022: 
+ hashmap.c | 6 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'enlarge':
+hashmap.c:66:26: error: initialization makes pointer from integer without a cast [-Werror=int-conversion]
+     long **oldCapacity = map->capacity;
+                          ^~~
+hashmap.c:77:23: error: comparison between pointer and integer [-Werror]
+     for (int i = 0; i < oldCapacity; i++)
+                       ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+fa6c908
