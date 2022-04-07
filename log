@@ -225,3 +225,17 @@ Thu Apr  7 15:09:07 HSP 2022:
  tests:  16|1
 total_score: 60/70
 06bb946
+Thu Apr  7 15:13:19 HSP 2022: 
+ hashmap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'enlarge':
+hashmap.c:65:21: error: initialization from incompatible pointer type [-Werror=incompatible-pointer-types]
+     Pair **auxMap = map;
+                     ^~~
+hashmap.c:65:12: error: unused variable 'auxMap' [-Werror=unused-variable]
+     Pair **auxMap = map;
+            ^~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+23366e9

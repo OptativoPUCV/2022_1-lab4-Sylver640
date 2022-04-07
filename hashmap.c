@@ -62,7 +62,8 @@ void insertMap(HashMap * map, char * key, void * value)
 
 void enlarge(HashMap * map) {
     enlarge_called = 1; //no borrar (testing purposes)
-
+    Pair **auxMap = map;
+    map -> capacity *= 2;
 
 }
 
@@ -141,6 +142,5 @@ Pair * nextMap(HashMap * map)
             return map->buckets[i];
         }
     }
-
     return NULL;
 }
