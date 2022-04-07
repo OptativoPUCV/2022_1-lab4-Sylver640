@@ -49,6 +49,12 @@ void insertMap(HashMap * map, char * key, void * value)
         hashFunction = (hashFunction+1) % map->capacity;
     }
 
+    if (map->buckets[hashFunction] != NULL)
+    {
+        map->buckets[hashFunction]->key = key;
+        map->buckets[hashFunction]->value = value;
+    }
+
     map->buckets[hashFunction] = createPair(key, value);
     map->size++;
 }
