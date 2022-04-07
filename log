@@ -147,3 +147,9 @@ hashmap.c:98:20: error: 'searchedElement' may be used uninitialized in this func
 cc1.exe: all warnings being treated as errors
 Compilation failed
 627ca19
+Thu Apr  7 12:12:06 HSP 2022: 
+ hashmap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ tests:  5|4
+total_score: 30/70
+d8a519c
