@@ -96,11 +96,13 @@ Pair * searchMap(HashMap * map,  char * key)
         if (is_equal(key, map->buckets[hashFunction]) == 1)
         {
             searchedElement = map->buckets[hashFunction];
+            map->current = hashFunction;
             return searchedElement;
         }
         hashFunction = (hashFunction+1) % map->capacity;
     }
 
+    map->current = hashFunction;
     return NULL;
 }
 
