@@ -58,7 +58,7 @@ HashMap * createMap(long capacity) {
     for (int i = 0; i < capacity; i++)
     {
         newMap->buckets[i] = (Pair *) malloc (sizeof(Pair));
-        newMap->buckets[i] = NULL;
+        //newMap->buckets[i] = NULL;
     }
     newMap->capacity = capacity;
     newMap->size = 0;
