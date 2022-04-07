@@ -80,8 +80,9 @@ void eraseMap(HashMap * map,  char * key) {
 
 }
 
-Pair * searchMap(HashMap * map,  char * key) {   
-
+Pair * searchMap(HashMap * map,  char * key) 
+{   
+    long hashFunction = hash(key, map->capacity);
 
     return NULL;
 }
