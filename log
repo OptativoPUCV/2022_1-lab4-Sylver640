@@ -61,3 +61,17 @@ hashmap.c:44:11: error: unused variable 'newElement' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 19b2389
+Thu Apr  7 11:42:19 HSP 2022: 
+ hashmap.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:4:0:
+hashmap.c: In function 'insertMap':
+hashmap.c:45:10: error: unused variable 'index' [-Werror=unused-variable]
+     long index = hash(key, map->capacity);
+          ^~~~~
+hashmap.c:44:11: error: unused variable 'newElement' [-Werror=unused-variable]
+     Pair *newElement = createPair(key, value);
+           ^~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+9d7c3b7
