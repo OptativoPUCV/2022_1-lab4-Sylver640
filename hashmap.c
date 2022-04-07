@@ -93,7 +93,7 @@ Pair * searchMap(HashMap * map,  char * key)
     Pair* searchedElement = NULL;
     while (map->buckets[hashFunction] != NULL && map->buckets[hashFunction]->key != NULL)
     {
-        if (is_equal(key, map->buckets[hashFunction]) == 1)
+        if (is_equal(key, map->buckets[hashFunction]->key) == 1)
         {
             searchedElement = map->buckets[hashFunction];
             map->current = hashFunction;
