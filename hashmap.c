@@ -77,7 +77,8 @@ void enlarge(HashMap * map) {
     {
         if (oldBuckets[i] == NULL)
             break;
-        map->buckets[i] = createPair(oldBuckets[i]->key, oldBuckets[i]->value);
+        //Pair* auxPair = createPair(oldBuckets[i]->key, oldBuckets[i]->value);
+        insertMap(map, oldBuckets[i]->key, oldBuckets[i]->value);
     }
 
 
