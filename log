@@ -188,3 +188,17 @@ Thu Apr  7 15:04:51 HSP 2022:
  tests:  12|2
 total_score: 50/70
 1bf65d4
+Thu Apr  7 15:05:25 HSP 2022: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:0:
+hashmap.c: In function 'firstMap':
+hashmap.c:125:9: error: this 'if' clause does not guard... [-Werror=misleading-indentation]
+         if (map->buckets[i] != NULL && map->buckets[i]->key != NULL)
+         ^~
+hashmap.c:127:13: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'if'
+             return map->buckets[i];
+             ^~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+4c7d423
