@@ -278,3 +278,8 @@ hashmap.c:77:23: error: comparison between pointer and integer [-Werror]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 fa6c908
+Thu Apr  7 15:32:26 HSP 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+30de738
