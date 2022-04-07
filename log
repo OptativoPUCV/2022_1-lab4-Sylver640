@@ -202,3 +202,9 @@ hashmap.c:127:13: note: ...this statement, but the latter is misleadingly indent
 cc1.exe: all warnings being treated as errors
 Compilation failed
 4c7d423
+Thu Apr  7 15:05:36 HSP 2022: 
+ hashmap.c | 2 ++
+ 1 file changed, 2 insertions(+)
+ tests:  13|2
+total_score: 50/70
+d64f6e4
