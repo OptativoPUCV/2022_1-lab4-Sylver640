@@ -75,3 +75,17 @@ hashmap.c:44:11: error: unused variable 'newElement' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 9d7c3b7
+Thu Apr  7 11:58:01 HSP 2022: 
+ hashmap.c | 9 ++++++---
+ 1 file changed, 6 insertions(+), 3 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'insertMap':
+hashmap.c:48:27: error: passing argument 2 of 'is_equal' makes pointer from integer without a cast [-Werror=int-conversion]
+         if (is_equal(key, hashFunction) == 1) return;
+                           ^~~~~~~~~~~~
+hashmap.c:35:5: note: expected 'void *' but argument is of type 'long int'
+ int is_equal(void* key1, void* key2){
+     ^~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+3e296b5
